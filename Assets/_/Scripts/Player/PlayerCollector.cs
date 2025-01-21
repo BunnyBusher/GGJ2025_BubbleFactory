@@ -1,3 +1,4 @@
+using PrimeTween;
 using UnityEngine;
 
 public class PlayerCollector : MonoBehaviour
@@ -5,24 +6,22 @@ public class PlayerCollector : MonoBehaviour
     
     [SerializeField]
     private float _pullSpeed;
-    private InventoryManager _inventory;
-
-    private void Start()
-    {
-        _inventory = GetComponentInParent<InventoryManager>();
-    }
+    private Transform _pickupTransform;
+    private bool _isDelaying = false;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_inventory.GetFirstEmptyIndex() == -1) return;
+        //if (_inventory.GetFirstEmptyIndex() == -1) return;
         if (collision.TryGetComponent(out iCollectible colletile))
         {
-            Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
-            Vector2 forceDirection = (transform.position - collision.transform.position).normalized;
-            rb.AddForce(forceDirection * _pullSpeed);
-
+            Pickup pickup = collision.GetComponent<Pickup>();
+            if (pickup.isPicked) return;
+            _pickupTransform = collision.GetComponent<Transform>();                        
+            Tween.Custom(collision.transform.position, transform.position, duration: _pullSpeed, onValueChange: MagnetRessource).OnComplete(() =>
+            {
             colletile.Collect();
+            });
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -30,9 +29,19 @@ public class PlayerCollector : MonoBehaviour
         if (!collision.gameObject.activeInHierarchy) return;
         if (collision.TryGetComponent(out iCollectible colletile))
         {
+            if (_isDelaying) return;
             Pickup pickup = collision.GetComponent<Pickup>();
-            if (!pickup.isPicked) return;
-            else pickup.DelayBeforePickup();
+            _isDelaying = true;
+            Tween.Delay(2f).OnComplete(() =>
+            {
+                pickup.isPicked = false;
+                _isDelaying = false;
+            });
         }
+    }
+    private void MagnetRessource (Vector3 move)
+    {
+        _pickupTransform.position= move;
+
     }
 }

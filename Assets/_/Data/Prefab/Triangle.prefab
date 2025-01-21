@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 806731577307875398}
   - component: {fileID: 7854476457653961140}
   - component: {fileID: 2935030972492507831}
-  - component: {fileID: 6709784606515115571}
   - component: {fileID: -1294575012169988614}
   m_Layer: 0
   m_Name: Triangle
@@ -154,18 +153,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.0025485952}
   m_Radius: 0.5766747
---- !u!114 &6709784606515115571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2544897420897871534}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b05b227d6c2ab5a4a9fefce0b8ff5121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-1294575012169988614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,3 +166,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPicked: 0
+  ressourceIcon: {fileID: 7482667652216324306, guid: a9da271d348369641a51f9cb24fa3b7b, type: 3}
