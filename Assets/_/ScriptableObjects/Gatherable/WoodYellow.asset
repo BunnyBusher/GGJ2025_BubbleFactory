@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bddb9948f7513459b75d31d1a5bfbd, type: 3}
   m_Name: WoodYellow
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
-  _maxHealth: 0
+  _prefab: {fileID: 6185567648751932929, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
+  _maxHealth: 2
