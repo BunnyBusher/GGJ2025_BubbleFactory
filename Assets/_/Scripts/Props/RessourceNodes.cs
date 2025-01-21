@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RessourceNodes : MonoBehaviour, IGatherable
+public class RessourceNodes : MonoBehaviour, iGatherable
 {
     [SerializeField] private GatherableScriptableObject _ressourceStats;
 
@@ -29,7 +29,7 @@ public class RessourceNodes : MonoBehaviour, IGatherable
         else
         {
             _currentHealth--;
-            Debug.Log(_currentHealth);
+            Debug.Log(this + " " + _currentHealth);
         }
     }
 }

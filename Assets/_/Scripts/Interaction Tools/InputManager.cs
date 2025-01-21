@@ -14,17 +14,18 @@ public class InputManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
+            _currentTimer -= Time.deltaTime;
             if (_currentTimer<=0)GatherableChecker();
-            _currentTimer-= Time.deltaTime;
         }
 
     }
 
     private void GatherableChecker()
     {
+        if (!Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask)) return;
         Collider2D collision = Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask);
         
-            if (collision.TryGetComponent(out IGatherable ressource))
+            if (collision.TryGetComponent(out iGatherable ressource))
             {
                 ressource.Gather();
                 _currentTimer = _delayBeforeGather;

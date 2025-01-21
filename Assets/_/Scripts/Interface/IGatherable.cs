@@ -1,4 +1,4 @@
-public interface IGatherable
+public interface iGatherable
 {
     public void Gather();
 }
