@@ -48,11 +48,13 @@ public class Production : StockInventory
                 return;            
             }
         }
-        _currentTime = 0;
         for (int i =0; i < _stock.Count; i++)
         {
             _stock[i].currentNumberOfRessource -= _stock[i].numberNeededToProduce;
+            _isRessourceInStock[i] = false;
         }
+        _currentTime = 0;
+        
         Debug.Log("Oxygene crée");
     }
 }

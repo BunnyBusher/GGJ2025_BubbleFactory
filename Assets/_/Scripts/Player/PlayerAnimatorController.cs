@@ -17,12 +17,12 @@ public class PlayerAnimator : MonoBehaviour
     {
         if (_playerMovement.moveDirection.x != 0 || _playerMovement.moveDirection.y != 0)
         {
-            _playerAnimator.SetBool("Move", true);
+            _playerAnimator.SetBool("isMoving", true);
             SpriteDirectionChecker();
         }
         else
         {
-            _playerAnimator.SetBool("Move", false);
+            _playerAnimator.SetBool("isMoving", false);
         }
 
     }
