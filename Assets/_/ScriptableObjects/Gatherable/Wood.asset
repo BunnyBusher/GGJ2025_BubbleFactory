@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2544897420897871534, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
   _maxHealth: 5
+  _ressourceNameTag: Wood

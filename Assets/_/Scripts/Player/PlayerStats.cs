@@ -14,14 +14,11 @@ public class PlayerStats : MonoBehaviour
     {
         int emptySlot = _inventory.GetFirstEmptyIndex();
         if (emptySlot == -1) return; // if no space left in inventory, do nothing
-                    
-        Vector3 localScale = ressource.transform.localScale;
-        Tween.Scale(ressource.transform, 0f, duration: 0.1f, Ease.Default).OnComplete(() =>
-            {
-                _inventory.AddRessource(emptySlot, ressource);
-                ressource.SetActive(false);
-                ressource.transform.localScale = localScale;
-
-            });
+       
+        _inventory.AddRessource(emptySlot, ressource);
+        ressource.SetActive(false);
+        
+        
+        
     }
 }

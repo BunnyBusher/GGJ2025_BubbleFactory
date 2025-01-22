@@ -11,7 +11,7 @@ public class GatherableScriptableObject : ScriptableObject
     [SerializeField] float _maxHealth;
     public float maxHealth { get => _maxHealth; private set => _maxHealth = value; }
 
-    ////Sprite for ressource in Inventory
-    //[SerializeField] Sprite _imageIcon;
-    //public float imageIcon { get => imageIcon; private set => imageIcon = value; }
+    //Sprite for ressource in Inventory
+    [SerializeField] string _ressourceNameTag;
+    public string ressourceNameTag { get => _ressourceNameTag; private set => _ressourceNameTag = value; }
 }

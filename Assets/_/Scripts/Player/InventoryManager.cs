@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,11 +33,29 @@ public class InventoryManager : MonoBehaviour
     public void RemoveRessource (int slotIndex)
     {
         if (ressourceSlots[slotIndex] == null) return;
-        var drop = Instantiate(ressourceSlots[slotIndex].gameObject,transform.position, Quaternion.identity);
-        Pickup dropPickup = drop.GetComponent<Pickup>();
-        dropPickup.isPicked = true;
-        drop.SetActive(true);
+        Pickup dropPickup = ressourceSlots[slotIndex].GetComponent<Pickup>();
+        dropPickup.isDropped = true;
+        dropPickup.TimeBeforeCollectAgain();
+        ressourceSlots[slotIndex].transform.position = transform.position;
+        ressourceSlots[slotIndex].SetActive(true);
+
         ressourceSlots [slotIndex] = null;
         imageSlots [slotIndex].sprite = null;
+                
+    }
+
+    public int AddRessourceToFactory(string tag)
+    {
+        if (GetFirstEmptyIndex() == -1) return -1;
+
+        for (int i = 0; i < ressourceSlots.Count; i++)
+        {
+            if (ressourceSlots[i].CompareTag(tag))
+            {
+                return i;
+            }
+        }
+        return -1;
+
     }
 }
