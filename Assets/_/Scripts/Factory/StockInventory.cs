@@ -32,10 +32,10 @@ public class StockInventory : MonoBehaviour
     {
         for (int i = 0; i < _inventory.ressourceSlots.Count;i++)
         {
-            if (_inventory.ressourceSlots[i].tag == tag)        //If find a ressource with the same tag in Inventory
+            if (_inventory.ressourceSlots[i] != null && _inventory.ressourceSlots[i].CompareTag(tag))        //If find a ressource with the same tag in Inventory
             {
-                _inventory.RemoveRessource(i);
                 Destroy(_inventory.ressourceSlots[i]);//Remove that ressource from inventory
+                _inventory.RemoveRessource(i);
                 for (int stockIndex = 0; stockIndex < _stock.Count; stockIndex++)   
                 {
                     if (_stock[stockIndex].ressourceData.ressourceNameTag == tag 

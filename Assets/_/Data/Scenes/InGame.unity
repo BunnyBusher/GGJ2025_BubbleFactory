@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b2b7e5dd03d124baf2b66ba3a5f18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+  _moveSpeed: 4
   moveDirection: {x: 0, y: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0

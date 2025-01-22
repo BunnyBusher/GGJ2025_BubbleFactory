@@ -43,9 +43,12 @@ public class Production : StockInventory
     {
         foreach (bool b in _isRessourceInStock)
         {
-            if (!b) return;            
+            if (!b)
+            {
+                return;            
+            }
         }
-
+        _currentTime = 0;
         for (int i =0; i < _stock.Count; i++)
         {
             _stock[i].currentNumberOfRessource -= _stock[i].numberNeededToProduce;
