@@ -488,7 +488,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -620,7 +620,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -795,63 +795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20873ff7a090784fbd38d95a69645a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &346553621
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.2574759
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.8326694
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1216937075750702185, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2544897420897871534, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
-      propertyPath: m_Name
-      value: Wood
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fc8040a58cacec643949cba5c403ab08, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1322,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1468,63 +1411,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &806925206
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.36303967
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.181644
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861372400558913136, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6185567648751932929, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
-      propertyPath: m_Name
-      value: WoodYellow
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bbea8490158e0d84a9b29509239a46b0, type: 3}
 --- !u!1 &983001035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1533,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1779,7 +1665,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1911,7 +1797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2191,6 +2077,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567348373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9002716443091521525, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+  m_PrefabInstance: {fileID: 120020080359616093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce61c2f019c0d44b950daf594227a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1679970210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,7 +2377,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2612,7 +2509,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2744,7 +2641,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2876,7 +2773,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 149653147}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: RemoveRessource
+        m_MethodName: DropRessource
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3071,12 +2968,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6308864113629219381, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 6849862341327447400, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+      propertyPath: _stockInventory
+      value: 
+      objectReference: {fileID: 1567348373}
+    - target: {fileID: 7744420590475959211, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+      propertyPath: _stockInventory
+      value: 
+      objectReference: {fileID: 1567348373}
+    - target: {fileID: 9002716443091521525, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+      propertyPath: _isRessourceInStock.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002716443091521525, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+      propertyPath: '_isRessourceInStock.Array.data[0]'
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6674399050516919154, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 9002716443091521525, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+      propertyPath: '_isRessourceInStock.Array.data[1]'
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3095,5 +3004,3 @@ SceneRoots:
   - {fileID: 1679970213}
   - {fileID: 1526479869}
   - {fileID: 120020080359616093}
-  - {fileID: 346553621}
-  - {fileID: 806925206}
