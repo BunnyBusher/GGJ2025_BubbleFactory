@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 45ba343e8492b124288a22ae91cd0919
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5298792457607419162
+    second: playerFrappe_0
+  - first:
+      213: -4507172365826972538
+    second: playerFrappe_1
+  - first:
+      213: -4994177660359136264
+    second: playerFrappe_2
+  - first:
+      213: 8815194345775241748
+    second: playerFrappe_3
+  - first:
+      213: -4519171758787602105
+    second: playerFrappe_4
+  - first:
+      213: -287825826877685316
+    second: playerFrappe_5
+  - first:
+      213: -2940024699367958288
+    second: playerFrappe_6
+  - first:
+      213: -699671058370072259
+    second: playerFrappe_7
+  - first:
+      213: -204781852989779622
+    second: playerFrappe_8
+  - first:
+      213: -7874703954754138633
+    second: playerFrappe_9
+  - first:
+      213: 4594544375186490041
+    second: playerFrappe_10
+  - first:
+      213: 6498089597399514366
+    second: playerFrappe_11
+  - first:
+      213: -699296939162443534
+    second: playerFrappe_12
+  - first:
+      213: 6811446549008933347
+    second: playerFrappe_13
+  - first:
+      213: -1118368434133559867
+    second: playerFrappe_14
+  - first:
+      213: -6365515615093909808
+    second: playerFrappe_15
+  - first:
+      213: -5142732376578008254
+    second: playerFrappe_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerFrappe_0
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 408
+        width: 666
+        height: 1533
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15953e7aa7198940800000000000000
+      internalID: 5298792457607419162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerFrappe_2
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 422
+        width: 676
+        height: 1544
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb2a11d0ed11bab0800000000000000
+      internalID: -4994177660359136264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerFrappe_3
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 382
+        width: 677
+        height: 1552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a17f57d8cd55a70800000000000000
+      internalID: 8815194345775241748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerFrappe_4
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 390
+        width: 843
+        height: 1530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749dc7e9a3da841c0800000000000000
+      internalID: -4519171758787602105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerFrappe_5
+      rect:
+        serializedVersion: 2
+        x: 4194
+        y: 357
+        width: 1068
+        height: 1541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1c5c77fef610cf0800000000000000
+      internalID: -287825826877685316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 47fc66bc62c8254488cbceb2318a7462
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      playerFrappe_0: 5298792457607419162
+      playerFrappe_1: -4507172365826972538
+      playerFrappe_10: 4594544375186490041
+      playerFrappe_11: 6498089597399514366
+      playerFrappe_12: -699296939162443534
+      playerFrappe_13: 6811446549008933347
+      playerFrappe_14: -1118368434133559867
+      playerFrappe_15: -6365515615093909808
+      playerFrappe_16: -5142732376578008254
+      playerFrappe_2: -4994177660359136264
+      playerFrappe_3: 8815194345775241748
+      playerFrappe_4: -4519171758787602105
+      playerFrappe_5: -287825826877685316
+      playerFrappe_6: -2940024699367958288
+      playerFrappe_7: -699671058370072259
+      playerFrappe_8: -204781852989779622
+      playerFrappe_9: -7874703954754138633
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
