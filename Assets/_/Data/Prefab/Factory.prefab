@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1810048652989762960}
   - component: {fileID: 4532962021741933174}
   - component: {fileID: 4872281010029697453}
+  - component: {fileID: 9002716443091521525}
   - component: {fileID: 792875717295174211}
   m_Layer: 0
   m_Name: Factory
@@ -107,6 +108,24 @@ MonoBehaviour:
     ressourceData: {fileID: 11400000, guid: f35bc4eb1ecbcfc43b9b6312a09e7f5b, type: 2}
     maxNumberOfRessource: 10
     currentNumberOfRessource: 0
+--- !u!114 &9002716443091521525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88546734959721988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce61c2f019c0d44b950daf594227a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recipe:
+    _recipeName: Oxygene
+    ingredient: []
+  _product: {fileID: 0}
+  _numberOfProduct: 0
+  _timeToProduct: 0
 --- !u!61 &792875717295174211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -301,6 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ressourceToAdd: {fileID: 11400000, guid: 91626b0994d40c84f8fb52109e95b6cb, type: 2}
+  _stockInventory: {fileID: 4872281010029697453}
 --- !u!1 &6674399050516919154
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ressourceToAdd: {fileID: 11400000, guid: f35bc4eb1ecbcfc43b9b6312a09e7f5b, type: 2}
+  _stockInventory: {fileID: 4872281010029697453}
 --- !u!1 &8019199220670337304
 GameObject:
   m_ObjectHideFlags: 0

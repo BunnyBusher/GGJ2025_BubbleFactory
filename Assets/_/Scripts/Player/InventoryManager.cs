@@ -32,13 +32,7 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveRessource (int slotIndex)
     {
-        if (ressourceSlots[slotIndex] == null) return;
-        Pickup dropPickup = ressourceSlots[slotIndex].GetComponent<Pickup>();
-        dropPickup.isDropped = true;
-        dropPickup.TimeBeforeCollectAgain();
-        ressourceSlots[slotIndex].transform.position = transform.position;
-        ressourceSlots[slotIndex].SetActive(true);
-
+        
         ressourceSlots [slotIndex] = null;
         imageSlots [slotIndex].sprite = null;
                 
@@ -57,5 +51,18 @@ public class InventoryManager : MonoBehaviour
         }
         return -1;
 
+    }
+
+    public void DropRessource(int slotIndex)
+    {
+        
+        if (ressourceSlots[slotIndex] == null) return;
+        Pickup dropPickup = ressourceSlots[slotIndex].GetComponent<Pickup>();
+        dropPickup.isDropped = true;
+        dropPickup.TimeBeforeCollectAgain();
+        ressourceSlots[slotIndex].transform.position = transform.position;
+        ressourceSlots[slotIndex].SetActive(true);
+        RemoveRessource(slotIndex);
+        
     }
 }

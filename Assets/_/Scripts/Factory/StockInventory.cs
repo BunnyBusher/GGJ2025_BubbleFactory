@@ -13,28 +13,35 @@ public class StockInventory : MonoBehaviour
     }
 
     [SerializeField] private List<Stock> _stock;
-    private PlayerStats _player;
+    private InventoryManager _inventory;
 
     private void Start()
     {
-        _player = FindAnyObjectByType<PlayerStats>();
+        _inventory = FindAnyObjectByType<InventoryManager>();
     }
 
-    
-
-   
-
-    public int NumberOfRessourceInStock(string tag)
+    public void AddRessource (string tag)
     {
-        for (int i = 0; i < _stock.Count; i++)
+        for (int i = 0; i < _inventory.ressourceSlots.Count;i++)
         {
-            if (_stock[i].ressourceData.ressourceNameTag == tag)
+            if (_inventory.ressourceSlots[i].tag == tag)        //If find a ressource with the same tag in Inventory
             {
-                Debug.Log(tag + " _stock[i].currentNumberOfRessource");
-                return _stock[i].currentNumberOfRessource;
+                _inventory.RemoveRessource(i);                  //Remove that ressource from inventory
+                for (int stockIndex = 0; stockIndex < _stock.Count; stockIndex++)   
+                {
+                    if (_stock[stockIndex].ressourceData.ressourceNameTag == tag 
+                        && _stock[stockIndex].currentNumberOfRessource < _stock[stockIndex].maxNumberOfRessource) // Find the ressource in stock, and check if not at Max Stock
+                    {
+                        _stock[stockIndex].currentNumberOfRessource++;
+                        return;
+                    }
+                }
+                Debug.LogWarning("Ressource remove from inventory, but not add in stock");
+                    
             }
         }
+            
+    }
 
-        return -1;
-    } 
+
 }
