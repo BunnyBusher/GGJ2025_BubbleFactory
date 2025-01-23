@@ -29,7 +29,7 @@ public class BuildManager : MonoBehaviour
 
     public void CheckRessourceForBuild()
     {
-
+        //if (factoryBuildSlots[0].)
 
 
     }
