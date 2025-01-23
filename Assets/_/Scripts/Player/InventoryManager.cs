@@ -8,11 +8,46 @@ public class InventoryManager : MonoBehaviour
     public List<GameObject> ressourceSlots = new List<GameObject>(10);
     public List<Image> imageSlots = new List<Image>();
 
+    public List<GatherableScriptableObject> currentRessourceData;
+    public List<int> currentRessource;
 
+    private void Start()
+    {
+        currentRessource = new List<int>();
+        for (int i = 0; i < currentRessourceData.Count; i++)
+        {
+            currentRessource.Add(0);
+        }
+    }
+
+    private void AddCurrentRessource(Pickup ressource)
+    {
+        for (int i = 0; i < currentRessourceData.Count; ++i)
+        {
+            if (currentRessourceData[i].ressourceNameTag == ressource.tag)
+            {
+                currentRessource[i]++;
+                break;
+            }
+        }
+    }
+
+    private void RemoveCurrentRessource(Pickup ressource)
+    {
+        for (int i = 0; i < currentRessourceData.Count; ++i)
+        {
+            if (currentRessourceData[i].ressourceNameTag == ressource.tag)
+            {
+                currentRessource[i]--;
+                break;
+            }
+        }
+    }
     public void AddRessource (int slotIndex, GameObject pickup)
     {
         ressourceSlots[slotIndex] = pickup;
         Pickup ressource = pickup.GetComponent<Pickup>();
+        AddCurrentRessource(ressource);
         imageSlots[slotIndex].sprite = ressource.ressourceIcon;
     }
 
@@ -31,7 +66,9 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveRessource (int slotIndex)
     {
-        
+        Pickup ressource = ressourceSlots[slotIndex].GetComponent<Pickup>();
+        RemoveCurrentRessource(ressource);
+
         ressourceSlots [slotIndex] = null;
         imageSlots [slotIndex].sprite = null;
                 
