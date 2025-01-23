@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ea06a137435a12342b5f576fcd6122d5
+guid: 43beca0e590ece8409f2223f0e21214a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -897,38 +897,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bullefr_0: -439189833469310057
-      bullefr_1: -3844061484913051129
-      bullefr_10: -1532704116892359792
-      bullefr_11: 2907364263488386407
-      bullefr_12: -7893057170275073208
-      bullefr_13: 5452567206459292022
-      bullefr_14: -4068488356994450349
-      bullefr_15: -383694489207021124
-      bullefr_16: 7444722523868642925
-      bullefr_17: -4757320839840189103
-      bullefr_18: -101195179868680504
-      bullefr_19: 9093000098378075182
-      bullefr_2: 1762778248234712317
-      bullefr_20: 6450753977743546612
-      bullefr_21: -7393293451977962266
-      bullefr_22: -6307298869360881831
-      bullefr_23: 7562043665045603512
-      bullefr_24: 7742600723334765537
-      bullefr_25: 223145836563148016
-      bullefr_26: -689058177903461108
-      bullefr_27: -1912877186648473730
-      bullefr_28: -4812874632408370435
-      bullefr_29: -5143320304613712129
-      bullefr_3: 3351490968696514756
-      bullefr_30: 327925091092947652
-      bullefr_4: 5905645237500636954
-      bullefr_5: -37643739878314419
-      bullefr_6: -7418527356209746936
-      bullefr_7: -8648197045466929310
-      bullefr_8: -5332522582646044620
-      bullefr_9: 5379476881312876902
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: b6c4695ad57dbd344a1b2b3f7d8ea9c4
+guid: db337fab34b98c44cb0621db1e00f197
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3079998565902607419
-    second: rocher_0
-  - first:
-      213: -6138826227428573826
-    second: rocher_1
-  - first:
-      213: 6561932186394964919
-    second: rocher_2
-  - first:
-      213: -1459625919097905665
-    second: rocher_3
-  - first:
-      213: 8788272502680503421
-    second: rocher_4
+      213: -5589740843778878394
+    second: Buisson_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rocher_0
+      name: Buisson_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 61
-        width: 860
-        height: 738
+        x: 71
+        y: 474
+        width: 1118
+        height: 760
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b34665d806a5eba20800000000000000
-      internalID: 3079998565902607419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rocher_1
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 788
-        width: 30
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7db44032128ecaa0800000000000000
-      internalID: -6138826227428573826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rocher_2
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 61
-        width: 17
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b336429e8aa01b50800000000000000
-      internalID: 6561932186394964919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rocher_3
-      rect:
-        serializedVersion: 2
-        x: 437
-        y: 61
-        width: 22
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffd5733c5fd5ebbe0800000000000000
-      internalID: -1459625919097905665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rocher_4
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 61
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d74ca97674736f970800000000000000
-      internalID: 8788272502680503421
+      spriteID: 644511c71504d62b0800000000000000
+      internalID: -5589740843778878394
       vertices: []
       indices: 
       edges: []
@@ -247,12 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      rocher_0: 3079998565902607419
-      rocher_1: -6138826227428573826
-      rocher_2: 6561932186394964919
-      rocher_3: -1459625919097905665
-      rocher_4: 8788272502680503421
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

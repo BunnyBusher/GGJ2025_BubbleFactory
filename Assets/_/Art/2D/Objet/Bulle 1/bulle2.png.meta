@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: c198084a3a6d9f34fbabee691b667f51
+guid: 27790d0ba37fea740b21fa0f9bc24311
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -787525474157108932
-    second: arbre1_0
+      213: -1999211560269146926
+    second: bulle2_0
   - first:
-      213: -6220673773759590793
-    second: arbre1_1
+      213: 2601605675705071299
+    second: bulle2_1
+  - first:
+      213: 9163005735003523964
+    second: bulle2_2
+  - first:
+      213: -6481857746407415236
+    second: bulle2_3
+  - first:
+      213: -4193309461177589739
+    second: bulle2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arbre1_0
+      name: bulle2_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 1147
-        width: 41
-        height: 66
+        x: 56
+        y: 3
+        width: 1119
+        height: 1155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c316b45f0c52215f0800000000000000
-      internalID: -787525474157108932
+      spriteID: 2d49d4f9daf5144e0800000000000000
+      internalID: -1999211560269146926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arbre1_1
+      name: bulle2_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 34
-        width: 1952
-        height: 1871
+        x: 1193
+        y: 202
+        width: 7
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +162,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77e887b492abba9a0800000000000000
-      internalID: -6220673773759590793
+      spriteID: 3c67a020492ca1420800000000000000
+      internalID: 2601605675705071299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulle2_2
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 211
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b80c51b29892f70800000000000000
+      internalID: 9163005735003523964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulle2_3
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 190
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32a5c4d8b0db06a0800000000000000
+      internalID: -6481857746407415236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulle2_4
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 170
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510a93d134f5ec5c0800000000000000
+      internalID: -4193309461177589739
       vertices: []
       indices: 
       edges: []
@@ -172,9 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      arbre1_0: -787525474157108932
-      arbre1_1: -6220673773759590793
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
