@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Wood
   - WoodYellow
+  - Branches
+  - Stones
+  - Bushe
+  - Clay
+  - Sand
   layers:
   - Default
   - TransparentFX
