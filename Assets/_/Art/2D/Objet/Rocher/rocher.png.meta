@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rocher_0: 3079998565902607419
+      rocher_1: -6138826227428573826
+      rocher_2: 6561932186394964919
+      rocher_3: -1459625919097905665
+      rocher_4: 8788272502680503421
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
