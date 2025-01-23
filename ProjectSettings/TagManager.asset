@@ -10,11 +10,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - BuildArea
   - Water
   - UI
   - Gatherable
-  - 
+  - NonBuildArea
   - 
   - 
   - 

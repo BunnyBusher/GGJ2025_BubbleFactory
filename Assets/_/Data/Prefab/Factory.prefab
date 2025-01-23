@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4532962021741933174}
   - component: {fileID: 9002716443091521525}
   - component: {fileID: 792875717295174211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.67, y: 3.1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6997779166428634753}
   m_Father: {fileID: 0}
@@ -133,7 +133,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -175,13 +175,13 @@ GameObject:
   - component: {fileID: 5525595237151700437}
   - component: {fileID: 5632895570848220381}
   - component: {fileID: 6849862341327447400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AddButton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7737417997029711208
 Transform:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.026231766, y: -0.016944826}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -296,7 +296,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.4, y: 1.31}
+  m_Size: {x: 4.9246273, y: 1.8409303}
   m_EdgeRadius: 0
 --- !u!114 &6849862341327447400
 MonoBehaviour:
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ressourceToAdd: {fileID: 11400000, guid: 91626b0994d40c84f8fb52109e95b6cb, type: 2}
-  _stockInventory: {fileID: 0}
+  _stockInventory: {fileID: 9002716443091521525}
 --- !u!1 &6674399050516919154
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,13 +324,13 @@ GameObject:
   - component: {fileID: 2528316526927203599}
   - component: {fileID: 8704378687776898541}
   - component: {fileID: 7744420590475959211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AddButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4827072170817467283
 Transform:
   m_ObjectHideFlags: 0
@@ -435,7 +435,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.013114929, y: -0.005648017}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -445,7 +445,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.4, y: 1.31}
+  m_Size: {x: 4.872161, y: 1.6375954}
   m_EdgeRadius: 0
 --- !u!114 &7744420590475959211
 MonoBehaviour:
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ressourceToAdd: {fileID: 11400000, guid: f35bc4eb1ecbcfc43b9b6312a09e7f5b, type: 2}
-  _stockInventory: {fileID: 0}
+  _stockInventory: {fileID: 9002716443091521525}
 --- !u!1 &8019199220670337304
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 6997779166428634753}
   - component: {fileID: 5984758917169193919}
   - component: {fileID: 9001177963558678595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
