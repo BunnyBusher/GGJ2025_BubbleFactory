@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc8a5605ce2bfb41a23595603bec71f, type: 3}
+  m_Name: OxygeneFactory
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 88546734959721988, guid: 244c1ba652efc4f4ba923f1b746a73ff, type: 3}
+  _sprite: {fileID: -5664050802494629814, guid: 3deea1ff700e9fa47a83c232f184de65, type: 3}
+  _factoryRecipes:
+  - _ressourceName: Wood
+    ressourceData: {fileID: 11400000, guid: f35bc4eb1ecbcfc43b9b6312a09e7f5b, type: 2}
+    numberNeededToBuild: 2
+  - _ressourceName: WoodYellow
+    ressourceData: {fileID: 11400000, guid: 91626b0994d40c84f8fb52109e95b6cb, type: 2}
+    numberNeededToBuild: 4
