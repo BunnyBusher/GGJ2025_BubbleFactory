@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using NUnit.Framework;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class ShowUiWhenPlayerNear : MonoBehaviour

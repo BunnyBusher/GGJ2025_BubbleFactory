@@ -9,9 +9,10 @@ public class InputManager : MonoBehaviour
     private float _currentTimer;
 
     public bool isGathering;
+
     //private PlaceBuilding _placeBuilding;
 
-    //private Camera _camera;
+    private Camera _camera;
 
     //test
     //public GameObject _prefabToBuild;
@@ -22,33 +23,36 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         //_placeBuilding = GetComponent<PlaceBuilding>();
-        //_camera = Camera.main;
+        _camera = Camera.main;
     }
 
-    
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            GatherableChecker();                  
-            
-        }else isGathering = false;
+            GatherableChecker();
 
-        //if (Input.GetMouseButton(0))
-        //{
-        //    Vector2 mousePosIn2D = _camera.ScreenToWorldPoint(Input.mousePosition);
-        //    RaycastHit2D hit = Physics2D.Raycast(mousePosIn2D, Vector2.zero);
+        }
+        else isGathering = false;
 
-        //    if (hit.collider == null) return;
-        //    if (IsInLayerMask(hit.collider.gameObject, _nonBuildArea)) return;
+        if (Input.GetMouseButtonDown(0))
+        {
+            // Convertir la position de la souris en un rayon dans l'espace 2D
+            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
 
-        //    if (IsInLayerMask(hit.collider.gameObject, _buildArea))
-        //    {
-        //    _placeBuilding.PlacePrefab(_prefabToBuild);
+            if (hit.collider != null)
+            {
+                // Vérifie si l'objet touché a le script OnClickAdd
+                OnClickAdd onClickAddScript = hit.transform.GetComponent<OnClickAdd>();
+                if (onClickAddScript != null)
+                {
+                    onClickAddScript.AddRessource();
+                }
+            }
 
-        //    }else Debug.Log("Objet " + hit.collider.gameObject.name);
-        //}
-
+        }
     }
 
     public bool IsInLayerMask(GameObject obj, LayerMask layerMask)

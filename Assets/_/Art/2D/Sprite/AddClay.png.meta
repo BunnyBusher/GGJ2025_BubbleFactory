@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 499749f7f4a4be44982a09f128d771cf
+guid: 9b7a3d3afa2085e40a4e30185a9148a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 702814306309566481
-    second: MachinePrimative_0
-  - first:
-      213: 4450200417879752623
-    second: MachinePrimative_1
+      213: 1067435883089314669
+    second: AddClay_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.5304197, y: 0.3781361}
-  spritePixelsToUnits: 1920
-  spriteBorder: {x: 750, y: 325, z: 578, w: 677}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -129,45 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MachinePrimative_0
+      name: AddClay_0
       rect:
         serializedVersion: 2
-        x: 652
-        y: 354
-        width: 1241
-        height: 2460
+        x: 0
+        y: 0
+        width: 440
+        height: 131
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 110f4ae43e5e0c900800000000000000
-      internalID: 702814306309566481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MachinePrimative_1
-      rect:
-        serializedVersion: 2
-        x: 1886
-        y: 1077
-        width: 6
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: faf740fa3b942cd30800000000000000
-      internalID: 4450200417879752623
+      spriteID: d634b08b74b40de00800000000000000
+      internalID: 1067435883089314669
       vertices: []
       indices: 
       edges: []
@@ -176,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -185,9 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MachinePrimative_0: 702814306309566481
-      MachinePrimative_1: 4450200417879752623
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

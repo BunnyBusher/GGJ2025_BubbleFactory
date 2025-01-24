@@ -6,9 +6,9 @@ public class OnClickAdd : MonoBehaviour
     [SerializeField] private StockInventory _stockInventory;
 
     
-
-    private void OnMouseDown()
+    public void AddRessource()
     {
         _stockInventory.AddRessource(_ressourceToAdd.ressourceNameTag);
     }
+   
 }
