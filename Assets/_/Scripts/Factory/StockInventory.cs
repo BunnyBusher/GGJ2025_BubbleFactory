@@ -16,11 +16,12 @@ public class StockInventory : MonoBehaviour
     [SerializeField] protected List<Stock> _stock;
     protected InventoryManager _inventory;
     public List<bool> _isRessourceInStock;
-
+    protected ParticleSystem _ps;
     private void Start()
     {
         _inventory = FindAnyObjectByType<InventoryManager>();
         _isRessourceInStock = new List<bool>();
+        _ps = GetComponentInChildren<ParticleSystem>();
 
         for (int i =0; i < _stock.Count; i++)
         {

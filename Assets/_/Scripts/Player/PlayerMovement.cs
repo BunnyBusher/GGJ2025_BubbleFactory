@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D _player;
+    private InputManager _inputManager;
     [SerializeField] private float _moveSpeed;
  
     //For Animation Controller
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _player = GetComponent<Rigidbody2D>();
+        _inputManager = GetComponent<InputManager>();
     }
 
     private void Update()
@@ -28,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void InputManagement()
     {
+        if (_inputManager.isGathering) return;
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour
@@ -8,45 +7,47 @@ public class InputManager : MonoBehaviour
 
     [SerializeField] private float _delayBeforeGather;
     private float _currentTimer;
-    private PlaceBuilding _placeBuilding;
 
-    private Camera _camera;
+    public bool isGathering;
+    //private PlaceBuilding _placeBuilding;
+
+    //private Camera _camera;
 
     //test
-    public GameObject _prefabToBuild;
-    [SerializeField] private LayerMask _buildArea;
-    [SerializeField] private LayerMask _nonBuildArea;
+    //public GameObject _prefabToBuild;
+    //[SerializeField] private LayerMask _buildArea;
+    //[SerializeField] private LayerMask _nonBuildArea;
 
 
     private void Awake()
     {
-        _placeBuilding = GetComponent<PlaceBuilding>();
-        _camera = Camera.main;
+        //_placeBuilding = GetComponent<PlaceBuilding>();
+        //_camera = Camera.main;
     }
 
-
+    
     private void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            _currentTimer -= Time.deltaTime;
-            if (_currentTimer<=0)GatherableChecker();
-        }
+            GatherableChecker();                  
+            
+        }else isGathering = false;
 
-        if (Input.GetMouseButton(0))
-        {
-            Vector2 mousePosIn2D = _camera.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePosIn2D, Vector2.zero);
+        //if (Input.GetMouseButton(0))
+        //{
+        //    Vector2 mousePosIn2D = _camera.ScreenToWorldPoint(Input.mousePosition);
+        //    RaycastHit2D hit = Physics2D.Raycast(mousePosIn2D, Vector2.zero);
 
-            if (hit.collider == null) return;
-            if (IsInLayerMask(hit.collider.gameObject, _nonBuildArea)) return;
+        //    if (hit.collider == null) return;
+        //    if (IsInLayerMask(hit.collider.gameObject, _nonBuildArea)) return;
 
-            if (IsInLayerMask(hit.collider.gameObject, _buildArea))
-            {
-            _placeBuilding.PlacePrefab(_prefabToBuild);
+        //    if (IsInLayerMask(hit.collider.gameObject, _buildArea))
+        //    {
+        //    _placeBuilding.PlacePrefab(_prefabToBuild);
 
-            }else Debug.Log("Objet " + hit.collider.gameObject.name);
-        }
+        //    }else Debug.Log("Objet " + hit.collider.gameObject.name);
+        //}
 
     }
 
@@ -61,12 +62,25 @@ public class InputManager : MonoBehaviour
 
     private void GatherableChecker()
     {
-        if (!Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask)) return;
+        if (!Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask))
+        {
+            return;
+        }
+            _currentTimer -= Time.deltaTime;
+        if (_currentTimer > 0)
+        {
+            isGathering = true;
+            return;
+        }
+        
+            
+        
         Collider2D collision = Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask);
         
             if (collision.TryGetComponent(out iGatherable ressource))
             {
-                ressource.Gather();
+            Vector3 pos = transform.position;    
+                ressource.Gather(pos);
                 _currentTimer = _delayBeforeGather;
             }
         
