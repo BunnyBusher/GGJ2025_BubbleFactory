@@ -27,7 +27,9 @@ public class Production : StockInventory
 
           
     private float _currentTime;
+    
 
+    
     private void FixedUpdate()
     {
         _currentTime += Time.deltaTime;
@@ -51,10 +53,10 @@ public class Production : StockInventory
         for (int i =0; i < _stock.Count; i++)
         {
             _stock[i].currentNumberOfRessource -= _stock[i].numberNeededToProduce;
-            _isRessourceInStock[i] = false;
+            if (_stock[i].currentNumberOfRessource < _stock[i].numberNeededToProduce)_isRessourceInStock[i] = false;
         }
         _currentTime = 0;
+       _ps.Play();
         
-        Debug.Log("Oxygene crée");
     }
 }

@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: bd3d38b3f7a5df94f84dd24778150b34
+guid: c1c0c670f116ee644bfc5abd8ad7d5cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1609091375808260191
-    second: Branche_0
+      213: 3079998565902607419
+    second: rocher_0
+  - first:
+      213: -6138826227428573826
+    second: rocher_1
+  - first:
+      213: 6561932186394964919
+    second: rocher_2
+  - first:
+      213: -1459625919097905665
+    second: rocher_3
+  - first:
+      213: 8788272502680503421
+    second: rocher_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +61,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  alignment: 9
+  spritePivot: {x: 0.5044023, y: 0.17144555}
+  spritePixelsToUnits: 252
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Branche_0
+      name: rocher_0
       rect:
         serializedVersion: 2
-        x: 102
-        y: 157
-        width: 958
-        height: 196
+        x: 151
+        y: 61
+        width: 860
+        height: 738
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a7ddc54beb5ba9e0800000000000000
-      internalID: -1609091375808260191
+      spriteID: b34665d806a5eba20800000000000000
+      internalID: 3079998565902607419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocher_1
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 788
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7db44032128ecaa0800000000000000
+      internalID: -6138826227428573826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocher_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 61
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b336429e8aa01b50800000000000000
+      internalID: 6561932186394964919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocher_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 61
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd5733c5fd5ebbe0800000000000000
+      internalID: -1459625919097905665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocher_4
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 61
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74ca97674736f970800000000000000
+      internalID: 8788272502680503421
       vertices: []
       indices: 
       edges: []
@@ -139,7 +239,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Branche_0: -1609091375808260191
+      rocher_0: 3079998565902607419
+      rocher_1: -6138826227428573826
+      rocher_2: 6561932186394964919
+      rocher_3: -1459625919097905665
+      rocher_4: 8788272502680503421
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

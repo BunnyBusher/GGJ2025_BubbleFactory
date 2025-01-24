@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bd3d38b3f7a5df94f84dd24778150b34
+guid: db337fab34b98c44cb0621db1e00f197
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1609091375808260191
-    second: Branche_0
+      213: -5589740843778878394
+    second: Buisson_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 624
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Branche_0
+      name: Buisson_0
       rect:
         serializedVersion: 2
-        x: 102
-        y: 157
-        width: 958
-        height: 196
+        x: 71
+        y: 474
+        width: 1118
+        height: 760
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a7ddc54beb5ba9e0800000000000000
-      internalID: -1609091375808260191
+      spriteID: 644511c71504d62b0800000000000000
+      internalID: -5589740843778878394
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Branche_0: -1609091375808260191
+      Buisson_0: -5589740843778878394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
