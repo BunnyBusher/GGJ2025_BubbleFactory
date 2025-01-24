@@ -7,6 +7,8 @@ public class InputManager : MonoBehaviour
 
     [SerializeField] private float _delayBeforeGather;
     private float _currentTimer;
+
+    public bool isGathering;
     //private PlaceBuilding _placeBuilding;
 
     //private Camera _camera;
@@ -23,14 +25,17 @@ public class InputManager : MonoBehaviour
         //_camera = Camera.main;
     }
 
-
+    private void FixedUpdate()
+    {
+        Debug.Log(_currentTimer);
+    }
     private void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            _currentTimer -= Time.deltaTime;
-            if (_currentTimer<=0)GatherableChecker();
-        }
+            GatherableChecker();                  
+            
+        }else isGathering = false;
 
         //if (Input.GetMouseButton(0))
         //{
@@ -60,7 +65,19 @@ public class InputManager : MonoBehaviour
 
     private void GatherableChecker()
     {
-        if (!Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask)) return;
+        if (!Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask))
+        {
+            return;
+        }
+            _currentTimer -= Time.deltaTime;
+        if (_currentTimer > 0)
+        {
+            isGathering = true;
+            return;
+        }
+        
+            
+        
         Collider2D collision = Physics2D.OverlapCircle(transform.position, _gatheringRange, _gatheringMask);
         
             if (collision.TryGetComponent(out iGatherable ressource))

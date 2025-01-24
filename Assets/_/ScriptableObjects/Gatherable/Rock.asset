@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bddb9948f7513459b75d31d1a5bfbd, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
-  _maxHealth: 0
-  _ressourceNameTag: 
+  _prefab: {fileID: 4084936463473035744, guid: bd2572408f6a2164988f94919be2d376, type: 3}
+  _maxHealth: 3
+  _ressourceNameTag: Rock

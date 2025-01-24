@@ -457,6 +457,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _delayBeforeGather: 0.5
+  isGathering: 0
 --- !u!114 &149653147
 MonoBehaviour:
   m_ObjectHideFlags: 0

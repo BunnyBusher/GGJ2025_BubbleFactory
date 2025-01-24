@@ -11,6 +11,7 @@ TagManager:
   - Bushe
   - Clay
   - Sand
+  - Rock
   layers:
   - Default
   - TransparentFX
