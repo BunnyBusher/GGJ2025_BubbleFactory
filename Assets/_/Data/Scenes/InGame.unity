@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b2b7e5dd03d124baf2b66ba3a5f18b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 10
+  _moveSpeed: 4
   moveDirection: {x: 0, y: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
@@ -4999,6 +4999,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2013627770646776876, guid: 189fc8056e065e941b7ca1dae3740b2a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4296996664021446827, guid: 189fc8056e065e941b7ca1dae3740b2a, type: 3}
       propertyPath: onScore.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

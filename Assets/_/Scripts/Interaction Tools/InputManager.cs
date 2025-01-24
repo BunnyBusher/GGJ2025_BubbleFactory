@@ -48,6 +48,7 @@ public class InputManager : MonoBehaviour
                 OnClickAdd onClickAddScript = hit.transform.GetComponent<OnClickAdd>();
                 if (onClickAddScript != null)
                 {
+                    Debug.Log(onClickAddScript.gameObject.name);
                     onClickAddScript.AddRessource();
                 }
             }

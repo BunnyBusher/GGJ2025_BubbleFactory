@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPicked: 0
   isDropped: 0
-  ressourceIcon: {fileID: 21300000, guid: 7cca5feb9866e91439da828b3c3c81c5, type: 3}
+  ressourceIcon: {fileID: 21300000, guid: c1c0c670f116ee644bfc5abd8ad7d5cf, type: 3}
 --- !u!50 &8625517516389073571
 Rigidbody2D:
   serializedVersion: 5
