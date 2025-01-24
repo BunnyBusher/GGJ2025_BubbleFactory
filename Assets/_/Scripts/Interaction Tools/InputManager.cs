@@ -25,10 +25,7 @@ public class InputManager : MonoBehaviour
         //_camera = Camera.main;
     }
 
-    private void FixedUpdate()
-    {
-        Debug.Log(_currentTimer);
-    }
+    
     private void Update()
     {
         if (Input.GetKey(KeyCode.Space))

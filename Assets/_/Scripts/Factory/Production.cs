@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Production : StockInventory
 {
@@ -25,11 +26,17 @@ public class Production : StockInventory
     [SerializeField] private int _numberOfProduct;
     [SerializeField] private float _timeToProduct;
 
+    public UnityEvent<int> onScore;
+
           
     private float _currentTime;
-    
 
-    
+    private void Awake()
+    {
+        if (onScore == null) onScore = new UnityEvent<int>();
+    }
+
+
     private void FixedUpdate()
     {
         _currentTime += Time.deltaTime;
@@ -56,7 +63,8 @@ public class Production : StockInventory
             if (_stock[i].currentNumberOfRessource < _stock[i].numberNeededToProduce)_isRessourceInStock[i] = false;
         }
         _currentTime = 0;
-       _ps.Play();
+        _ps.Play();
+        onScore?.Invoke(_numberOfProduct);
         
     }
 }
