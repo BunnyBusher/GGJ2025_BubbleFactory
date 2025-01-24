@@ -48,6 +48,10 @@ public class InventoryManager : MonoBehaviour
         ressourceSlots[slotIndex] = pickup;
         Pickup ressource = pickup.GetComponent<Pickup>();
         AddCurrentRessource(ressource);
+
+        Color color = imageSlots[slotIndex].color;
+        color.a = 1;
+        imageSlots[slotIndex].color = color;
         imageSlots[slotIndex].sprite = ressource.ressourceIcon;
     }
 
@@ -70,6 +74,9 @@ public class InventoryManager : MonoBehaviour
         RemoveCurrentRessource(ressource);
 
         ressourceSlots [slotIndex] = null;
+        Color color = imageSlots[slotIndex].color;
+        color.a = 0.5f;
+        imageSlots[slotIndex].color = color;
         imageSlots [slotIndex].sprite = null;
                 
     }

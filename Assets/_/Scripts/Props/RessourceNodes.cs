@@ -19,13 +19,13 @@ public class RessourceNodes : MonoBehaviour, iGatherable
         _currentHealth = _currentMaxHealth;
     }
 
-    public void Gather()
+    public void Gather(Vector3 pos)
     {
         if (_currentHealth <= 0)
         {
             GameObject ressource = Instantiate(_ressourceStats.prefab);
             
-            ressource.transform.position = new Vector2 (transform.position.x + Random.Range(-1f, 1f), transform.position.y + Random.Range(-1f, 1f)) ;
+            ressource.transform.position = new Vector2 (pos.x + Random.Range(-0.5f, 0.5f), pos.y + Random.Range(-0.5f, 0.5f)) ;
             _currentHealth = _currentMaxHealth;
         }
         else
