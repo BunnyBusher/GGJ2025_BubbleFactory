@@ -1,4 +1,6 @@
+using UnityEngine;
+
 public interface iGatherable
 {
-    public void Gather();
+    void Gather(Vector3 pos);
 }
